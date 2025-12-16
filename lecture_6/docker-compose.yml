@@ -1,10 +1,12 @@
 version: '3.8'
 
 services:
-  fastapi-app:
+  book-api:
     build: .
-    container_name: fastapi-healthcheck
+    container_name: book-api
     image: app:latest
     ports:
       - "8000:8000"
     restart: unless-stopped
+    volumes:
+      - ./books.db:/app/books.db
