@@ -1,13 +1,13 @@
-# Dockerized FastAPI Application
+# Dockerized Book Collection API
 
-FastAPI application in a Docker container with healthcheck endpoint.
+Full-featured Book Collection API (from lecture_5) containerized with Docker, including required healthcheck endpoint.
 
 ## Requirements
 
 1. Docker installed
 2. Docker Compose (optional)
 
-## Step-by-Step Guide
+## Step-by-Step Guide (Docker Requirements)
 
 ### 1. Build docker image
 ```bash
@@ -22,6 +22,7 @@ docker images
 ```bash
 docker run app:latest
 ```
+_Note: For port mapping, use: docker run -p 8000:8000 app:latest_
 ### 4. Check that your container is running in another terminal tab
 Open a new terminal tab and run:
 ```bash
